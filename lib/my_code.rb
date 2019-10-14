@@ -24,7 +24,6 @@ end
 def reduce_to_all_true(source_array)
   flag = false
   source_array.each do |ele|
-    flag = true
     if ele
       flag == true
     end
