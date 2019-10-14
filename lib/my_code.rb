@@ -22,14 +22,23 @@ def reduce_to_total(source_array, starting_point=0)
 end
 
 def reduce_to_all_true(source_array)
-  flag = false
+  if source_array
+    return false
+  end
+  flag = true
   source_array.each do |ele|
-    if ele
-      flag == true
+    if !ele
+      flag == false
     end
   end
     return flag
 end
 
 def reduce_to_any_false(source_array)
+  flag = false
+  source_array.each do |ele|
+    if ele == true
+      flag = true
+    end
+    
 end
