@@ -27,7 +27,7 @@ def reduce_to_all_true(source_array)
   end
   source_array.each do |ele|
     if !ele
-      return value
+      return ele
     end
   end
     return true
