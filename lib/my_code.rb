@@ -25,13 +25,12 @@ def reduce_to_all_true(source_array)
   if !source_array
     return false
   end
-  flag = true
   source_array.each do |ele|
     if !ele
-      flag == false
+      return value
     end
   end
-    return flag
+    return true
 end
 
 def reduce_to_any_true(source_array)
