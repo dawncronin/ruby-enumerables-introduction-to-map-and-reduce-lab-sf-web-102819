@@ -34,7 +34,7 @@ def reduce_to_all_true(source_array)
     return flag
 end
 
-def reduce_to_any_false(source_array)
+def reduce_to_any_true(source_array)
   source_array.each do |ele|
     if ele == true
       return true
