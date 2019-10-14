@@ -27,6 +27,7 @@ def reduce_to_all_true(source_array)
     if ele != true 
       flag = flase
     end
+  end
     return flag
 end
 
