@@ -35,10 +35,10 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_false(source_array)
-  flag = false
   source_array.each do |ele|
     if ele == true
-      flag = true
+      return true
     end
-    
+  end
+  return false
 end
